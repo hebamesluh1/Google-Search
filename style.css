@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #202124;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+/* start header style  */
+nav{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin:30px 50px;
+}
+.logo-box{
+    display: grid;
+    grid-template-columns: 10% 30%;
+}
+.s-box{
+    width:700px;
+    margin:0px auto;
+    position: relative;
+    margin-top: -8px;
+    text-align: center;
+}
+.s-box .s-input{
+    display: block;
+    color:#fff;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 25px;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border:1px solid transparent;
+    background-color: #bdc1c62a;
+    margin-left:30px;
+    position: relative;
+}
+.s-box .console-icon{
+    width: 20px;
+    color: #9aa0a6;
+    position: absolute;
+    top:15px;
+    right:18%;
+}
+
+.s-box .vs-icon{
+    position: absolute;
+    top: 13px;
+    right: 12%;
+}
+.s-box .camera-icon{
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    width: 25px;
+}
+.s-box .search-icon{
+    position: absolute;
+    top: 15px;
+    right: 0%;
+    color: #8ab4f8;
+}
+.menu{
+    text-align: end;
+}
+.menu div{
+    display: inline-flex;
+    align-items: center;
+}
+.menu img{
+    width: 40px;
+    margin:0 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+.menu img:hover{
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 50%;
+}
+/* end header style  */
