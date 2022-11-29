@@ -312,7 +312,7 @@ footer{
     width: 100%;
 }
 footer .foo{
-    padding: 12px 30px;
+    padding: 12px 100px;
 }
 footer h4{
     font-size: 15px;
@@ -320,6 +320,9 @@ footer h4{
     line-height: 45px;
     padding-left: 29px;
     border-bottom: 1px solid #3c4043;
+}
+footer h4 span{
+    color: #8ab4f8;
 }
 footer a{
     color:#9aa0a6 ;
