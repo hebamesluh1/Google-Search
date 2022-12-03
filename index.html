@@ -4,335 +4,297 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>react js - Google Search </title>
-    <!-- favicon -->
-    <link rel="icon" href="image/favicon.png">
+    <title>Document</title>
     <!-- font awsome link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- normalize link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- style link  -->
+    <!-- style css link  -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- header side  -->
-    <header>
-        <nav>
-            <div class="logo-box">
-                <div class="logo">
-                    <!-- <img src="image/google.png" alt="google icons" class="google-logo"> -->
-                    <h2>Google</h2>
-                </div>
+    <div class="container">
+        <!-- header  -->
+        <div class="logo">
+            <h2>Google</h2>
+            <form action="https://www.google.com/">
                 <div class="s-box">
-                    <form action="">
-                        <input type="text" maxlength="1240" name="search" class="s-input" value="react js">
-                    </form>
+                    <input type="text" maxlength="1240" name="search" class="s-input" value="react js">
                     <i class="fa-solid fa-x console-icon"></i>
                     <img src="image/voice.png" alt="search by voice" width="14px" class="vs-icon">
-                    <img src="image/camera.svg" alt="search by image" class="camera-icon">
+                    <img src="image/camera.svg" alt="search by image" width="20px" class="camera-icon">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
                 </div>
-            </div>
-            <div class="menu">
-                <div>
-                    <img src="image/setting.png" alt="setting icon" style="width: 30px;">
-                    <img src="image/menus-s.png" alt="google menu">
-                    <img src="image/user.png" alt="user profile" style="width: 35px; margin-right: 0;" class="user-icon">
-                </div>
-            </div>
+            </form>
+        </div>
+        <nav>
+            <ul>
+                <li><img src="image/setting.png" alt="setting icon" style="width: 20px;"></li>
+                <li><img src="image/menus-s.png" alt="google menu" width="30px"></li>
+                <li><img src="image/user.png" alt="user profile" style="width: 25px; margin-right: 0;" class="user-icon"></li>
+            </ul>
         </nav>
-    </header>
-    <!-- end header side  -->
-    <main>
-        <!-- start top bar section  -->
-        <div class="top-bar">
-            <div class="container">
-                <ul>
-                    <li>
-                    <span
-                        ><svg focusable="false" viewBox="0 0 24 24">
-                        <path
-                            fill="#34a853"
-                            d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8"
-                        ></path>
-                        <path
-                            fill="#ea4335"
-                            d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6"
-                        ></path>
-                        <path
-                            fill="#fbbc04"
-                            d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6"
-                        ></path>
-                        <path
-                            fill="#4285f4"
-                            d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59"
-                        ></path>
-                        </svg>
-                    </span>
-                    All
-                    </li>
-                    <li>
-                    <div>
-                        <span
-                        ><svg focusable="false" viewBox="0 0 24 24">
-                            <path
-                            d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5"
-                            ></path></svg></span
-                        >Images
-                    </div>
-                    </li>
-                    <li>
-                    <div>
-                        <span
-                        ><svg focusable="false" viewBox="0 0 24 24">
-                            <path
-                            d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5"
-                            ></path></svg></span
-                        >Videos
-                    </div>
-                    </li>
-                    <li>
-                    <div>
-                        <span
-                        ><svg focusable="false" viewBox="0 0 24 24">
-                            <path
-                            d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2"
-                            ></path></svg></span
-                        >News
-                    </div>
-                    </li>
-                    <li>
-                    <div>
-                        <span
-                        ><svg focusable="false" viewBox="0 0 24 24">
-                            <path
-                            d="M18 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0 18H6V4h2v8l2.5-1.5L13 12V4h5v16"
-                            ></path></svg></span
-                        >Books
-                    </div>
-                    </li>
-                    <li>
-                    <div>
-                        <span
-                        ><svg
-                            focusable="false"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                        >
-                            <path
-                            d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
-                            ></path></svg></span
-                        >More
-                    </div>
-                    </li>
-                </ul>
-                <span class="tools"> Tools </span>
+        <div class="mobile-header">
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
             </div>
-        </div>
-        <!-- end top bar section  -->
-        <!-- start main content  -->
-        <div class="container">
-            <span class="results">About 4,110,000,000 results (0.56 seconds) </span>
-        </div>
-        <div class="container">
-            <section>
-                <div class="search-result">
-                    <span class="location">https://somelink > nav</span>
-                    <div>
-                        <h4 style="color: #c68af9;">React – A JavaScript library for building user interfaces</h4>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aliquid, modi consequatur optio, aperiam commodi, animi magnam
-                            alias voluptatibus atque nobis . Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Ad dolores sed recusandae error
-                            et, necessitatibus nulla distinctio accusantium modi cum.
-                            Repellendus vel nam ipsam omnis fugiat possimus, quos autem
-                            tempora?
-                        </p>
-                    </div>
-                </div>
-            <div class="search-result">
-                <span class="location">https://somelink > nav</span>
             <div>
-                <h4 style="color: #c68af9;">Getting Started</h4>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquid, modi consequatur optio, aperiam commodi, animi magnam
-                    alias voluptatibus atque nobis . Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Ad dolores sed recusandae error
-                    et, necessitatibus nulla distinctio accusantium modi cum.
-                    Repellendus vel nam ipsam omnis fugiat possimus, quos autem
-                    tempora?
-                </p>
+                <h3>Google</h3>
             </div>
+            <div class="porofile-user">
+                <i class="fa-solid fa-user"></i>
             </div>
-            <div class="search-result">
-                <span class="location">https://somelink > nav</span>
-                <div>
-                <h4>Tutorial: Intro to React</h4>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquid, modi consequatur optio, aperiam commodi, animi magnam
-                    alias voluptatibus atque nobis . Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Ad dolores sed recusandae error
-                    et, necessitatibus nulla distinctio accusantium modi cum.
-                    Repellendus vel nam ipsam omnis fugiat possimus, quos autem
-                    tempora?
-                </p>
-            </div>
-            </div>
-            <div class="search-result">
-                <span class="location">https://somelink > nav</span>
-                <div>
-                    <h4>Create a New React App</h4>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Aliquid, modi consequatur optio, aperiam commodi, animi magnam
-                        alias voluptatibus atque nobis . Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Ad dolores sed recusandae error
-                        et, necessitatibus nulla distinctio accusantium modi cum.
-                        Repellendus vel nam ipsam omnis fugiat possimus, quos autem
-                        tempora?
-                    </p>
+        </div>
+        <div class="google-search-box">
+            <form action="https://www.google.com/">
+                <div class="s-box">
+                    <input type="text" maxlength="1240" name="search" class="s-input" value="react js">
+                    <i class="fa-solid fa-x console-icon"></i>
+                    <img src="image/voice.png" alt="search by voice" width="14px" class="vs-icon">
+                    <img src="image/camera.svg" alt="search by image" width="20px" class="camera-icon">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
                 </div>
-            </div>
-            <div class="search-result">
-                <span class="location">https://somelink > nav</span>
+            </form>
+        </div>
+        <!-- end header  -->
+        <!-- start navbar side  -->
+        <div class="top-bar">
+            <ul>
+                <li>
+                <span
+                    ><svg focusable="false" viewBox="0 0 24 24">
+                    <path
+                        fill="#34a853"
+                        d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8"
+                    ></path>
+                    <path
+                        fill="#ea4335"
+                        d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6"
+                    ></path>
+                    <path
+                        fill="#fbbc04"
+                        d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6"
+                    ></path>
+                    <path
+                        fill="#4285f4"
+                        d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59"
+                    ></path>
+                    </svg>
+                </span>
+                All
+                </li>
+                <li>
                 <div>
-                    <h4>Hello World</h4>
-                    <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquid, modi consequatur optio, aperiam commodi, animi magnam
-                    alias voluptatibus atque nobis . Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Ad dolores sed recusandae error
-                    et, necessitatibus nulla distinctio accusantium modi cum.
-                    Repellendus vel nam ipsam omnis fugiat possimus, quos autem
-                    tempora?
-                    </p>
+                    <span
+                    ><svg focusable="false" viewBox="0 0 24 24">
+                        <path
+                        d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5"
+                        ></path></svg></span
+                    >Images
                 </div>
-            </div>
-            <div class="search-result">
-                <span class="location">https://somelink > nav</span>
+                </li>
+                <li>
                 <div>
-                    <h4>React Tutorial - W3Schools</h4>
-                    <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquid, modi consequatur optio, aperiam commodi, animi magnam
-                    alias voluptatibus atque nobis . Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Ad dolores sed recusandae error
-                    et, necessitatibus nulla distinctio accusantium modi cum.
-                    Repellendus vel nam ipsam omnis fugiat possimus, quos autem
-                    tempora?
-                    </p>
+                    <span
+                    ><svg focusable="false" viewBox="0 0 24 24">
+                        <path
+                        d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5"
+                        ></path></svg></span
+                    >Videos
                 </div>
-            </div>
-            <div class="search-result">
-                <span class="location">https://somelink > nav</span>
+                </li>
+                <li>
                 <div>
-                    <h4>What is React - W3Schools</h4>
-                    <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquid, modi consequatur optio, aperiam commodi, animi magnam
-                    alias voluptatibus atque nobis . Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Ad dolores sed recusandae error
-                    et, necessitatibus nulla distinctio accusantium modi cum.
-                    Repellendus vel nam ipsam omnis fugiat possimus, quos autem
-                    tempora?
-                    </p>
+                    <span
+                    ><svg focusable="false" viewBox="0 0 24 24">
+                        <path
+                        d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2"
+                        ></path></svg></span
+                    >News
                 </div>
-            </div>
-            <div class="search-result">
-                <span class="location">https://somelink > nav</span>
+                </li>
+                <li>
                 <div>
-                    <h4>React (JavaScript library) - Wikipedia</h4>
-                    <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquid, modi consequatur optio, aperiam commodi, animi magnam
-                    alias voluptatibus atque nobis . Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Ad dolores sed recusandae error
-                    et, necessitatibus nulla distinctio accusantium modi cum.
-                    Repellendus vel nam ipsam omnis fugiat possimus, quos autem
-                    tempora?
-                    </p>
+                    <span
+                    ><svg focusable="false" viewBox="0 0 24 24">
+                        <path
+                        d="M18 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0 18H6V4h2v8l2.5-1.5L13 12V4h5v16"
+                        ></path></svg></span
+                    >Books
                 </div>
-            </div>
-            <div class="search-result">
-                <span class="location">https://somelink > nav</span>
+                </li>
+                <li>
                 <div>
-                    <h4>React – A JavaScript library for building user interfaces</h4>
-                    <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquid, modi consequatur optio, aperiam commodi, animi magnam
-                    alias voluptatibus atque nobis . Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Ad dolores sed recusandae error
-                    et, necessitatibus nulla distinctio accusantium modi cum.
-                    Repellendus vel nam ipsam omnis fugiat possimus, quos autem
-                    tempora?
-                    </p>
+                    <span
+                    ><svg
+                        focusable="false"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                        d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                        ></path></svg></span
+                    >More
                 </div>
+                </li>
+            </ul>
+            <span class="tools"> Tools </span>
+        </div>
+        <!-- end navbar side  -->
+        <!-- main content  -->
+        <section class="content">
+            <span>About 599,000,000 results (0.42 seconds)</span>
+            <div>
+                <a href="https://somelink:">https://somelink > nav</a>
+                <h2 style="color: #c68af9;">React – A JavaScript library for building user interfaces</h2>
+                <p>React · Declarative. React makes it painless to create interactive UIs. · Component-Based. Build encapsulated components that manage their own state, then compose ...</p>
             </div>
+            <div class="sub-content">
+                <h2 style="color: #c68af9;">Getting Started</h2>
+                <p>Tutorial: Intro to React - Add React to a Website - Hello World - ...</p>
+                <h2>Tutorial: Intro to React</h2>
+                <p>React is a declarative, efficient, and flexible JavaScript library ...</p>
+                <h2>Create a New React App</h2>
+                <p>Create React App is a comfortable environment for learning React ...</p>
+                <h2>Hello World</h2>
+                <p>const root = ReactDOM.createRoot(document....</p>
+                <a href="#">More results from reactjs.org »</a>
+            </div>
+            <div>
+                <a href="#">What is React - W3Schoolshttps://www.w3schools.com › whatis › whatis_react </a>
+                <h2>What is React - W3Schools</h2>
+                <p><b>React</b> is a JavaScript library created by Facebook.<b>React</b> is a User Interface (UI) library. React is a tool for building UI components ...</p>
+            </div>
+            <div>
+                <a href="#">What is React - W3Schoolshttps://www.w3schools.com › whatis › whatis_react </a>
+                <h2>What is React - W3Schools</h2>
+                <p><b>React</b> is a JavaScript library created by Facebook.<b>React</b> is a User Interface (UI) library. React is a tool for building UI components ...</p>
+            </div>
+            <div>
+                <a href="#">What is React - W3Schoolshttps://www.w3schools.com › whatis › whatis_react </a>
+                <h2>What is React - W3Schools</h2>
+                <p><b>React</b> is a JavaScript library created by Facebook.<b>React</b> is a User Interface (UI) library. React is a tool for building UI components ...</p>
+            </div>
+            <div>
+                <a href="#">What is React - W3Schoolshttps://www.w3schools.com › whatis › whatis_react </a>
+                <h2>What is React - W3Schools</h2>
+                <p><b>React</b> is a JavaScript library created by Facebook.<b>React</b> is a User Interface (UI) library. React is a tool for building UI components ...</p>
+            </div>
+            <div>
+                <a href="#">What is React - W3Schoolshttps://www.w3schools.com › whatis › whatis_react </a>
+                <h2>What is React - W3Schools</h2>
+                <p><b>React</b> is a JavaScript library created by Facebook.<b>React</b> is a User Interface (UI) library. React is a tool for building UI components ...</p>
+            </div>
+            <div>
+                <a href="#">What is React - W3Schoolshttps://www.w3schools.com › whatis › whatis_react </a>
+                <h2>What is React - W3Schools</h2>
+                <p><b>React</b> is a JavaScript library created by Facebook.<b>React</b> is a User Interface (UI) library. React is a tool for building UI components ...</p>
+            </div>
+            <h2 class="s-title">Related searches :</i></h2>
+                        <form action="#">
+                            <div class="search-suggestion">
+                            <div>
+                                <div class="box">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" value="react js tutorial ">
+                                </div>
+                                <div class="box">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" value="react js interview question ">
+                                </div>
+                                <div class="box">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" value="react js example ">
+                                </div>
+                                <div class="box">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" value="react js w3schools ">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="box">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" value="react js documentation ">
+                                </div>
+                                <div class="box">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" value="react js download ">
+                                </div>
+                                <div class="box">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" value="react js native ">
+                                </div>
+                                <div class="box">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" value="react js vs angular ">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="google">
+                        <h3>Goooooooooogle <i class="fa-solid fa-angle-right"></i> </h3>
+                    </div>
         </section>
-            <aside>
-                <div class="side-content">
-                    <div class="images-grid">
-                        <div>
-                            <img src="image/React-icon.svg.png" alt="react logo" width="30px"/>
-                        </div>                        
-                        <div>
-                            <img src="image/logo-og.png" alt="react logo" width="30px" />
-                            <img src="image/reactCode.png" alt="react code" width="30px">
-                        </div>
+        <!-- end main content  -->
+        <!-- aside  -->
+        <aside>
+            <div class="content">
+                <div class="top-image">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOPJvR-kaQcRrzFQikt6g94ZSNoXHAW1vtrDuHuzHROHyf6RWRAiL-Y1BRWnVZShZEmT8&usqp=CAU" alt="react icon" class="react-icon" >
                     </div>
-                    <div class="side-title">
-                        <h3>React</h3>
-                        <span>Computer program</span>
-                    </div>
-                    <div class="content">
-                        <div class="main">
-                        React is a free and open-source front-end JavaScript library for
-                        building user interfaces based on UI components. It is
-                        maintained by Meta and a community of individual developers and
-                        companies.
-                    </div>
-                    <ul>
-                        <li>Initial release date: <span>May 29, 2013</span></li>
-                        <li>Platform: <span> Web platform</span></li>
-                        <li>Developer(s): <span>Meta and community</span></li>
-                        <li>Original author(s): <span>Jordan Walke</span></li>
-                        <li>License: <span>MIT License</span></li>
-                        <li>Repository: <span>github.com/facebook/react</span></li>
-                        <li>Programming language: <span>JavaScript</span></li>
-                    </ul>
-                    </div>
-                    <div class="footer">
-                        <h3>People also search for</h3>
-                        <div>
-                            <img src="image/AngularJS-Shield.svg" alt="angular icon"  />
-                            <img src="image/590px-Node.js_logo.svg.png" alt="node js icon" />
-                            <img src="image/React-icon.svg.png" alt="react icon" />
-                            <img src="image/1184px-Vue.js_Logo_2.svg.png" alt="vue icon" />
-                        </div>
+                    <div>
+                        <img src="https://www.3allemni.com/wp-content/uploads/2019/06/2019-06-26_143342.png" alt="logo" >
+                        <img src="https://www.pngkey.com/png/full/342-3429274_horde-technology-react-js-project.png" alt="code">
                     </div>
                 </div>
-            </aside>
-        </div>
-    </main>
-    <!-- end main content  -->
-    <!-- start footer style  -->
-    <footer>
-        <div class="foo">
-            <h4>Palestine <span>Gaza -Based on your past activity
-            - Update location </span></h4>
-            <div class="links">
-                <div class="link-1">
-                    <a href="#">Help</a>
-                    <a href="#">Send Feedback</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
+                <div class="title">
+                    <h3>React</h3>
+                    <p>Computer program</p>
+                </div>
+                <div class="a-content">
+                    <p>
+                        React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies. <a href="#">Wikipedia</a>
+                    </p>
+                    <ul>
+                        <li>Initial release date: May 29, 2013</li>
+                        <li>Platform: <a href="#">Web platform</a></li>
+                        <li>Developer(s):<a href="#"> Meta</a> and community</li>
+                        <li>Original author(s): <a href="#">Jordan Walke</a></li>
+                        <li>License:<a href="#"> MIT License</a></li>
+                        <li>Repository: <a href="#">github.com/facebook/react</a></li>
+                        <li>Programming language: <a href="#">JavaScript</a></li>
+                    </ul>
+                    <h3>People also search for</h3>
+                    <div>
+                        <img src="image/AngularJS-Shield.svg" alt="angular" >
+                        <img src="image/590px-Node.js_logo.svg.png" alt="node js">
+                        <img src="image/React-icon.svg.png" alt="react ">
+                        <img src="image/1184px-Vue.js_Logo_2.svg.png" alt="vue">
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- end footer style  -->
+        </aside>
+        <!-- end aside  -->
+
+
+
+        <!-- footer  -->
+        <footer>
+            <div class="foo">
+                <div class="foo-1">
+                    <h4>Palestine <span>- Gaza -Based on your past activity
+                        - Update location </span></h4>
+                </div>
+                <div class="links">
+                    <div class="link-1">
+                        <a href="#">Help</a>
+                        <a href="#">Send Feedback</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+            </div> 
+        </footer>
+        <!-- end footer  -->
+    </div>
 </body>
 </html>
