@@ -157,7 +157,7 @@ nav li{
     font-size: 15px;
 }
 .content div{
-    width: 70%;
+    width: 80%;
     margin-bottom: 40px;
 }
 .content div a{
@@ -198,9 +198,10 @@ nav li{
 .content .search-suggestion .box{
     position: relative;
     margin-bottom:10px;
+    width: 100%;
 }
 .content .search-suggestion input{
-    width: 250px;
+    width: 100%;
     outline: none;
     border: 1px solid #303134;
     background-color: #303134;
@@ -363,8 +364,13 @@ footer a{
     section.content{
         margin-left: 50px;
     }
-    section.content .search-suggestion .box input{
-        width: 200px;
+    section.content .search-suggestion{
+        grid-template-columns:100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    section.content .search-suggestion div{
+        margin-bottom: 0px;
     }
     section.content .google{
         font-size: 20px;
@@ -445,9 +451,6 @@ footer a{
         top: 15px;
         right: 20px;
         color: var(--title-color);
-    }
-    section.content .search-suggestion .box input{
-        width: 150px;
     }
     section.content{
         margin-left: 30px;
